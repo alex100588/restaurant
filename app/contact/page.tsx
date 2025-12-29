@@ -1,9 +1,20 @@
-import React from 'react'
+// app/contact/page.tsx
+import Navbar from '@/components/Navbar';
+import Image from 'next/image';
 
-const Contact = () => {
+export default function Contact() {
   return (
-    <div>Contact</div>
-  )
+    <>
+      <Navbar />
+      <div className="absolute inset-0 -z-10">
+              <Image
+                src="/home/hero.jpg"
+                alt="Hero Image"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+    </>
+  );
 }
-
-export default Contact

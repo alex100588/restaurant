@@ -18,15 +18,15 @@ export default function Footer() {
   };
 
   return (
-    <footer className="mt-20 border-t bg-background">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-8">
+    <footer className="mt-20 border-t border-gray-800 bg-black text-white">
+      <div className="mx-auto max-w-7xl px-6 py-8 flex flex-col sm:flex-row items-center sm:justify-between gap-6 sm:gap-0">
         {/* Linkuri stânga */}
-        <nav className="flex flex-wrap gap-4 text-sm text-muted-foreground">
+        <nav className="flex flex-wrap justify-center sm:justify-start gap-4 text-sm text-gray-400">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="transition-colors hover:text-foreground"
+              className="transition-colors hover:text-white"
             >
               {item.label}
             </Link>
